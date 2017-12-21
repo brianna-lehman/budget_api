@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Budget</title>
+	<script type="text/javascript" src="../static/script.js"></script>
+</head>
+<body>
+	<form id='addCat'>
+		Category Name: <input type="text" name="name" value="cat" id="catName"><br>
+		Limit: <input type="number" step="0.01" name="limit" value="100" id="catLim"><br>
+		<button onclick="addCategory()" type="button" value="Add Category">Add Category</button>
+	</form>
+	<br>
+	<form id='addPurch'>
+		Purchase Amount: <input type="number" step="0.01" name="amount" id="purchAmount" value="1.00"><br>
+		Purchase Name: <input type="text" name="name" id="purchName" value="description"><br>
+		Date: <input type="date" name="date" id="purchDate" value="2017-12-06"><br>
+		Category: <br>
+	</form>
+	<br>
+	<form id="deleteCat"></form>
+	<div id="budgetData"></div>
+</body>
+</html>
